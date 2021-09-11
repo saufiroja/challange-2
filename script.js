@@ -10,10 +10,10 @@ const getPilihanCom = () => {
 
 const getResult = (player, com) => {
   // rules
-  if (player == com) return "SERI!";
-  if (player == "gunting") return com == "batu" ? "Kalah!" : "Menang!";
-  if (player == "batu") return com == "gunting" ? "Menang!" : "kalah!";
-  if (player == "kertas") return com == "gunting" ? "Kalah!" : "Menang!";
+  if (player == com) return "DRAW";
+  if (player == "gunting") return com == "batu" ? "COM WIN" : "PLAYER 1 WIN";
+  if (player == "batu") return com == "gunting" ? "PLAYER 1 WIN" : "COM WIN";
+  if (player == "kertas") return com == "gunting" ? "COM WIN" : "PLAYER 1 WIN";
 };
 
 const pilihan = document.querySelectorAll("li img");
@@ -26,6 +26,11 @@ pilihan.forEach((choice) => {
     const imgCom = document.querySelector(".area-com");
     imgCom.setAttribute("src", `./assets/${pilihanCom}.png`);
 
-    alert(hasil);
+    const info = document.querySelector(".vs");
+    info.innerHTML = hasil;
+
+    // alert(hasil);
   });
 });
+
+const refresh = () => {};
