@@ -35,6 +35,8 @@ ul {
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 
 li {
@@ -49,18 +51,21 @@ li:hover {
   display: flex;
   align-self: flex-start;
   position: absolute;
-  margin-right: 18rem;
+  margin-right: 30rem;
 }
 .com {
   display: flex;
   align-self: flex-start;
   position: absolute;
-  margin-left: 23rem;
+  margin-left: 33rem;
 }
 
 .vs {
   width: 10rem;
   height: 5rem;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
 }
 
 /* 
