@@ -29,8 +29,12 @@ pilihan.forEach((choice) => {
     const info = document.querySelector(".vs");
     info.innerHTML = hasil;
 
-    // alert(hasil);
+    alert(`Player 1 memilih ${pilihanPlayer} Com memilih ${pilihanCom}
+Maka hasilnya ${hasil}
+    `);
   });
 });
 
-const refresh = () => {};
+const refresh = () => {
+  document.location.reload();
+};
