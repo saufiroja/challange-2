@@ -41,6 +41,7 @@ ul {
 
 li {
   list-style: none;
+  cursor: pointer;
 }
 
 li:hover {
@@ -67,6 +68,15 @@ li:hover {
   text-align: center;
   color: white;
 }
+
+/* .image {
+  display: none;
+  position: absolute;
+} */
+
+/* .versus {
+  display: flex;
+} */
 
 /* 
 .player1 {
